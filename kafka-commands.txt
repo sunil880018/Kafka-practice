@@ -1,0 +1,18 @@
+step -1. Download java from official website
+step -2. Download kafka from official website
+
+----------------------> Kafka running commands <-------------------------------
+
+initially go to your kafka folder and hit the below commands
+
+
+1.Start zookeeper: bin/zookeeper-server-start.sh config/zookeeper.properties
+
+2.Start kafka : bin/kafka-server-start.sh config/server.properties
+
+3.Create topic : bin/kafka-topics.sh --create --bootstrap-server localhost:9092  --topic noti
+
+
+4.Start producing message :  bin/kafka-console-producer.sh --topic noti --bootstrap-server localhost:9092
+
+5.Start consuming message:   bin/kafka-console-consumer.sh --topic noti --from-beginning --bootstrap-server localhost:9092
